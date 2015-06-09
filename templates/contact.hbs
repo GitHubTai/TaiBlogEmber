@@ -6,11 +6,20 @@
 			<li>{{#link-to 'news'}}News{{/link-to}}</li>
 			<li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
 		</ul>
-	<h1>Tai's Blog</h1>
+	<h1>Contact</h1>
 
-		<ul>
-			<li><a href="#">I love Manchester!!!</a></li>
-			<li><a href="#">Old Trafford</a></li>
-			<li><a href="#">Deansgate</a></li>
-		</ul>
+	<div class="row">
+		<div class="col-md-6">
+			<p>Want to get in touch?</p>
+			<ul>	
+				<li>{{#link-to 'phone'}}Phone{{/link-to}}</li>
+				<li>{{#link-to 'email'}}Email{{/link-to}}</li>
+			</ul>
+		</div>
+		<div class="col-md-6">
+			{{outlet}}
+		</div>
+	</div>
 </div>
+
+

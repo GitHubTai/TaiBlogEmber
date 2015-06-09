@@ -6,11 +6,18 @@
 			<li>{{#link-to 'news'}}News{{/link-to}}</li>
 			<li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
 		</ul>
-	<h1>Tai's Blog</h1>
 
-		<ul>
-			<li><a href="#">I love Manchester!!!</a></li>
-			<li><a href="#">Old Trafford</a></li>
-			<li><a href="#">Deansgate</a></li>
-		</ul>
+	<h1>Latest News</h1>
+
+	<ol>
+		<li>{{#link-to 'newsOne'}}Ember installed version 1.7.0{{/link-to}}!</li>
+		<li><a href="#">Handlebars installed version 1.0.3!</a></li>
+		<li><a href="#">jQuery installed version 1.11.3</a></li>
+
+	</ol>
+
+	<div class="col-md-6">
+	{{outlet}}
+</div>
+
 </div>
