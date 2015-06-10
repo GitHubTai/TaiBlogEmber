@@ -9,8 +9,19 @@
 				<li>{{#link-to 'email'}}Email{{/link-to}}</li>
 			</ul>
 
+			{{#if messageSent}}
+			
+			<p>Thank you. Your message has been sent. Your confirmation number is {{confirmationNumber}}.</p>
+			
+			{{else}}
+
 			<p>Or, <a href="#" {{action 'sendMessage'}}>click here</a> to send a private message.</p>
+			{{/if}}
+
 		</div>
+
+		
+		
 		<div class="col-md-6">
 			{{outlet}}
 		</div>

@@ -10,5 +10,7 @@ Blogger.Router.map(function() {
 	this.resource('news', function() {
 		this.resource('newsOne');
 	});
+
+	this.resource('recent-comments');
 	
 });
