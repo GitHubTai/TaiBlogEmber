@@ -32,6 +32,11 @@
 	<p>{{text}}</p>
 	{{/each}}
 
+<!-- linking to the the new nested 'new-comment' route -->
+<!-- because it is nested inside we need to provide a value for the dynamic segment by passing 'this'-->
+<!-- this refers to the model you currently are on (i.e. comment.js), then we extract the id-->
+
 	<p>{{#link-to 'new-comment' this.id class="btn btn-default"}}New comment{{/link-to}}</p>
 
+	<!-- when clicked, show the new comment box at the bottom of the page -->
 	{{outlet}}

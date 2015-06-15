@@ -7,8 +7,10 @@ Blogger.Post = DS.Model.extend({
 	title: DS.attr(),
 	body: DS.attr(),
 
-	//create 
-	//create comments property that returns all comments for that post
+	
+	//create comments property that returns all comments for that 
+	//makes relationship with the 'comment' model!
+
 	comments: DS.hasMany('comment', {async:true})
 
 });
